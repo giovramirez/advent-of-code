@@ -1,0 +1,13 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:giovramirez/adventofcode.git",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.11.10"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}

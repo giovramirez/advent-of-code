@@ -1,6 +1,6 @@
 import { readFile } from '../../utils';
 
-function totalizeCalories(elfInventory: number[]) {  
+function totalizeCalories(elfInventory: number[]) {
   const totalCalories = elfInventory.reduce(
     (accumulator, currentValue) => accumulator + currentValue,
     0
@@ -21,7 +21,7 @@ function checkTopThreePositions(totalElfCalories: number, topThreeCalories: numb
     topThreeCalories[2] = topThreeCalories[1];
     topThreeCalories[1] = totalElfCalories;
   } else if (totalElfCalories > topThreeCalories[2]) {
-    topThreeCalories[2] = totalElfCalories;        
+    topThreeCalories[2] = totalElfCalories;
   }
 }
 
@@ -32,7 +32,7 @@ function checkElvesInventory() {
   let heighestElfCalories = 0;
   let elfCalories: number[] = [];
 
-  for (const elfCalorie of allElvesCalories) {    
+  for (const elfCalorie of allElvesCalories) {
     if (isElfCaloriesDone(elfCalorie)) {
       const totalElfCalories = totalizeCalories(elfCalories);
 
